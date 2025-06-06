@@ -4,7 +4,7 @@
     [1] = { freq = 264.1, color = "Blue 1", name = "MAGIC" },
     [2] = { freq = 264.6, color = "Blue 2", name = "WIZARD" },
     [3] = { freq = 264.8, color = "Blue 4", name = "OVERLORD" },
-    [4] = { freq = 305.8, color = "Grey 1", name = "TEXACO" }
+    [4] = { freq = 305.8, color = "Grey 1", name = "SHELL" }
   },
   COM2 = {
     [1] = { freq = 140.0, color = "Red 1", name = "FLIGHT" },
