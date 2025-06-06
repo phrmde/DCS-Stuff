@@ -21,6 +21,7 @@
     [18] = { freq = 262.5, color = "Amber 5", name = "KOBULETI GND" },
     [19] = { freq = 262, color = "Amber 6", name = "KOBULETI TWR" },
     [20] = { freq = 324.5, color = "White 2", name = "JTAC HAMMER" }
+ },
  COM2 = {
     [1] = { freq = 140, color = "Red 1", name = "Viper Common" },
     [2] = { freq = 140.1, color = "Red 2", name = "Viper-1" },
