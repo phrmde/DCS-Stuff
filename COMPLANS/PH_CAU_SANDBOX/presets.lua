@@ -7,6 +7,7 @@
   },
   COM2 = {
     [1] = { freq = 140.0, color = "Red 1", name = "FLIGHT" },
-    [2] = { freq = 140.5, color = "Red 2", name = "FLIGHT" }
+    [2] = { freq = 140.5, color = "Red 2", name = "FLIGHT" },
+    [3] = { freq = 134.5, color = "White 1", name = "JTAC" }
   }
 }
