@@ -1,0 +1,37 @@
+{
+  aircraft = "F-14B", 
+  COM1 = {
+    [1] = { freq = 255, color = "Red 1", name = "Springfield Common" },
+    [2] = { freq = 255.1, color = "Red 2", name = "Springfield-1" },
+    [3] = { freq = 255.2, color = "Red 3", name = "Springfield-2" },
+    [4] = { freq = 255.3, color = "Red 4", name = "Springfield-3" },
+    [5] = { freq = 243, color = "Black", name = "Guard" },
+    [6] = { freq = 255.4, color = "Red 5", name = "Springfield-4" },
+    [7] = { freq = 334.1, color = "Orange 1", name = "NAVAL MISSION 1" },
+    [8] = { freq = 334.2, color = "Orange 2", name = "NAVAL MISSION 2" },
+    [9] = { freq = 334.3, color = "Orange 3", name = "NAVAL MISSION 3" },
+    [10] = { freq = 334.4, color = "Orange 4", name = "NAVAL MISSION 4" },
+  },
+  COM2 = {
+    [1] = { freq = 261.5, color = "Blue 1", name = "MAGIC" },
+    [2] = { freq = 261.6, color = "Blue 2", name = "DARKSTAR" },
+    [3] = { freq = 261.7, color = "Blue 3", name = "OVERLORD" },
+    [4] = { freq = 261.8, color = "Blue 4", name = "WIZZARD" },
+    [5] = { freq = 243, color = "Black", name = "Guard" },
+    [6] = { freq = 262.1, color = "Grey 1", name = "TEXACO (KC135)" },
+    [7] = { freq = 262.2, color = "Grey 2", name = "SHELL (KC135 MPRS)" },
+    [8] = { freq = 262.3, color = "Grey 3", name = "ARCO (S3B)" },
+    [9] = { freq = 127.5, color = "Green 1", name = "DCS CVN ATC" },
+    [10] = { freq = 227.5, color = "Green 2", name = "CVN TWR" },
+    [11] = { freq = 227.6, color = "Green 3", name = "CVN DEP" },
+    [12] = { freq = 227.7, color = "Green 4", name = "CVN CVN CCA FINAL A" },
+    [13] = { freq = 227.8, color = "Green 5", name = "CVN MARSHAL" },
+    [14] = { freq = 227.9, color = "Green 6", name = "CVN CVN CCA FINAL B" },
+    [15] = { freq = 261.1, color = "Amber 1", name = "SENAKI GND" },
+    [16] = { freq = 261, color = "Amber 2", name = "SENAKI TWR" },
+    [17] = { freq = 269.2, color = "Amber 3", name = "VAZIANI GND" },
+    [18] = { freq = 269, color = "Amber 4", name = "VAZIANI TWR" },
+    [19] = { freq = 262.5, color = "Amber 5", name = "BATUMI GND" },
+    [20] = { freq = 262, color = "Amber 6", name = "BATUMI TWR" }
+  }
+}
