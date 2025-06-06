@@ -99,6 +99,5 @@ def process_all(base_dir="COMPLANS"):
                 except Exception as e:
                     print(f"❌  Fehler bei Datei {file}: {e}")
 
-
 if __name__ == "__main__":
     process_all()
