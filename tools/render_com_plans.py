@@ -47,7 +47,7 @@ def render_com_plan(aircraft, com1_data, com2_data, output_dir, input_file):
         draw_obj.text((x + 400, y + 5), "NAME", font=cell_font, fill="black")
         y += row_height
 
-        for ch, entry in sorted(presets.items(), key=lambda i: int(i[0])):
+        for ch, entry in sorted(pressets.items(), key=lambda i: int(i[0])):
             freq, color, name = entry.get("freq"), entry.get("color"), entry.get("name")
             draw_obj.rectangle([x, y, table_widths[-1], y + row_height], outline="black", width=1)
             fill_color = color_map.get(color.split()[0], "#000000")
@@ -75,10 +75,10 @@ def parse_input_file(file_path):
     with open(file_path, 'r', encoding='utf-8') as f:
         raw = f.read()
 
-    # Entferne Kommentare und bereinige Lua -> JSON
-    raw = re.sub(r'--.*', '', raw)
-    raw = raw.replace('=', ':')
-    raw = re.sub(r'\[(\d+)\]', r'""', raw)
+    raw = re.sub(r'--.*', '', raw)  # remove comments
+    raw = raw.replace('=', ':')  # convert to JSON-style
+    raw = re.sub(r'\[(\d+)\]', r'""', raw)  # [1] -> "1"
+    raw = re.sub(r'(\s*)(\w+)\s*:', r'\1"\2":', raw)  # unquoted keys -> quoted
     raw = raw.replace("nil", "null").replace("true", "true").replace("false", "false")
 
     try:
