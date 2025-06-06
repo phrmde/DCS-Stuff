@@ -1,5 +1,5 @@
 {
-  aircraft = "F-16CM", -- oder "F-4E", "F-14B", "F/A-18C"
+  aircraft = "F-16CM", 
   COM1 = {
     [1] = { freq = 264.1, color = "Blue 1", name = "MAGIC" },
     [2] = { freq = 264.6, color = "Blue 2", name = "WIZARD" },
