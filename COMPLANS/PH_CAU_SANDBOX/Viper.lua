@@ -15,6 +15,7 @@
     [12] = { freq = 261.2, color = "Green 3", name = "SENAKI DEP" },
     [13] = { freq = 261.3, color = "Green 5", name = "SENAKI ARR" },
     [14] = { freq = 261.4, color = "Green 6", name = "SENAKI APR" },
+    [15] = { freq = 261.45, color = "Green 7", name = "SENAKI DEL" },
     [16] = { freq = 269.2, color = "Amber 3", name = "VAZIANI GND" },
     [17] = { freq = 269, color = "Amber 4", name = "VAZIANI TWR" },
     [18] = { freq = 262.5, color = "Amber 5", name = "KOBULETI GND" },
