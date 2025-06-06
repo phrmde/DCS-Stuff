@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 import os
 import json
-import ast
+import re
 from pathlib import Path
 from datetime import datetime
 from PIL import Image, ImageDraw, ImageFont
@@ -47,7 +47,7 @@ def render_com_plan(aircraft, com1_data, com2_data, output_dir, input_file):
         draw_obj.text((x + 400, y + 5), "NAME", font=cell_font, fill="black")
         y += row_height
 
-        for ch, entry in presets.items():
+        for ch, entry in sorted(presets.items(), key=lambda i: int(i[0])):
             freq, color, name = entry.get("freq"), entry.get("color"), entry.get("name")
             draw_obj.rectangle([x, y, table_widths[-1], y + row_height], outline="black", width=1)
             fill_color = color_map.get(color.split()[0], "#000000")
@@ -73,18 +73,22 @@ def render_com_plan(aircraft, com1_data, com2_data, output_dir, input_file):
 
 def parse_input_file(file_path):
     with open(file_path, 'r', encoding='utf-8') as f:
-        content = f.read()
+        raw = f.read()
 
-    if file_path.endswith(".json"):
-        data = json.loads(content)
-    else:
-        content = content.replace("=", ":").replace("nil", "None").replace("true", "True").replace("false", "False")
-        content = content.replace("[", "").replace("]", "").replace("'", '"')
-        data = ast.literal_eval(content)
+    # Entferne Kommentare und bereinige Lua -> JSON
+    raw = re.sub(r'--.*', '', raw)
+    raw = raw.replace('=', ':')
+    raw = re.sub(r'\[(\d+)\]', r'""', raw)
+    raw = raw.replace("nil", "null").replace("true", "true").replace("false", "false")
+
+    try:
+        data = json.loads(raw)
+    except Exception as e:
+        raise ValueError(f"Fehler beim Parsen von {file_path}: {e}")
 
     aircraft = data["aircraft"]
-    com1 = {int(k): v for k, v in data.get("COM1", {}).items()}
-    com2 = {int(k): v for k, v in data.get("COM2", {}).items()}
+    com1 = {str(k): v for k, v in data.get("COM1", {}).items()}
+    com2 = {str(k): v for k, v in data.get("COM2", {}).items()}
     return aircraft, com1, com2
 
 def process_all(base_dir="COMPLANS"):
