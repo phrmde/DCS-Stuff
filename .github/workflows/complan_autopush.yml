@@ -18,42 +18,42 @@ jobs:
       pull-requests: write
 
     steps:
-    - name: Checkout repository
-      uses: actions/checkout@v3
+      - name: Checkout repository
+        uses: actions/checkout@v3
 
-    - name: Set up Python
-      uses: actions/setup-python@v4
-      with:
-        python-version: 3.11
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: 3.11
 
-    - name: Install dependencies
-      run: |
-        sudo apt-get update
-        sudo apt-get install -y python3-pil fonts-dejavu-core
-        pip install pillow
+      - name: Install dependencies
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y python3-pil fonts-dejavu-core
+          pip install pillow
 
-    - name: Run COM PLAN renderer
-      run: python tools/render_com_plans.py
+      - name: Run COM PLAN renderer
+        run: python tools/render_com_plans.py
 
-    - name: Commit generated kneeboards
-      run: |
-        git config user.name "COMPlan Bot"
-        git config user.email "bot@example.com"
-        git checkout -b autogen/complan-kneeboards || git checkout autogen/complan-kneeboards
-        git add COMPLANS/**/*.png
-        git commit -m "Auto-generated COM PLAN kneeboards" || echo "No changes"
-        git push --force-with-lease https://x-access-token:${{ secrets.GH_PAT }}@github.com/${{ github.repository }} autogen/complan-kneeboards
-      env:
-        GH_PAT: ${{ secrets.GH_PAT }}
+      - name: Commit generated kneeboards
+        run: |
+          git config user.name "COMPlan Bot"
+          git config user.email "bot@example.com"
+          git checkout -B autogen/complan-kneeboards
+          git add COMPLANS/**/*.png
+          git commit -m "Auto-generated COM PLAN kneeboards" || echo "No changes"
+          git push --force-with-lease https://x-access-token:${{ secrets.GH_PAT }}@github.com/${{ github.repository }} autogen/complan-kneeboards
+        env:
+          GH_PAT: ${{ secrets.GH_PAT }}
 
-    - name: Create Pull Request
-      uses: peter-evans/create-pull-request@v5
-      with:
-        token: ${{ secrets.GH_PAT }}
-        commit-message: Auto-generated COM PLAN kneeboards
-        branch: autogen/complan-kneeboards
-        title: "Auto-generated COM PLAN kneeboards"
-        body: |
-          Dieser Pull Request enthält automatisch generierte Kneeboard-Dateien (.png)
-          basierend auf den COM PLAN .lua/.json Dateien im Repository.
-        base: main
+      - name: Create Pull Request to main
+        uses: peter-evans/create-pull-request@v5
+        with:
+          token: ${{ secrets.GH_PAT }}
+          commit-message: Auto-generated COM PLAN kneeboards
+          branch: autogen/complan-kneeboards-pr
+          title: "Auto-generated COM PLAN kneeboards"
+          body: |
+            Dieser Pull Request enthält automatisch generierte Kneeboard-Dateien (.png)
+            basierend auf den COM PLAN .lua/.json Dateien im Repository.
+          base: main
