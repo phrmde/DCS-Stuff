@@ -100,4 +100,4 @@ def process_all(base_dir="COMPLANS"):
                     print(f"❌  Fehler bei Datei {file}: {e}")
 
 if __name__ == "__main__":
-    process_all()
+    process_all("COMPLANS")
