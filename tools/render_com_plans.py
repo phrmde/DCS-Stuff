@@ -87,17 +87,18 @@ def parse_input_file(file_path):
     com2 = {int(k): v for k, v in data.get("COM2", {}).items()}
     return aircraft, com1, com2
 
-def process_all(input_dir="com_plans", output_dir="kneeboards"):
-    os.makedirs(output_dir, exist_ok=True)
-    for file in os.listdir(input_dir):
-        if file.endswith(".lua") or file.endswith(".json"):
-            full_path = os.path.join(input_dir, file)
-            try:
-                aircraft, com1, com2 = parse_input_file(full_path)
-                render_com_plan(aircraft, com1, com2, output_dir, full_path)
-                print(f"✅  {file} verarbeitet")
-            except Exception as e:
-                print(f"❌  Fehler bei Datei {file}: {e}")
+def process_all(base_dir="COMPLANS"):
+    for root, _, files in os.walk(base_dir):
+        for file in files:
+            if file.endswith(".lua") or file.endswith(".json"):
+                full_path = os.path.join(root, file)
+                try:
+                    aircraft, com1, com2 = parse_input_file(full_path)
+                    render_com_plan(aircraft, com1, com2, output_dir=root, input_file=full_path)
+                    print(f"✅  {file} verarbeitet")
+                except Exception as e:
+                    print(f"❌  Fehler bei Datei {file}: {e}")
+
 
 if __name__ == "__main__":
     process_all()
