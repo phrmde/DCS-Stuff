@@ -3,7 +3,8 @@
   COM1 = {
     [1] = { freq = 264.1, color = "Blue 1", name = "MAGIC" },
     [2] = { freq = 264.6, color = "Blue 2", name = "WIZARD" },
-    [3] = { freq = 264.8, color = "Blue 4", name = "OVERLORD" }
+    [3] = { freq = 264.8, color = "Blue 4", name = "OVERLORD" },
+    [3] = { freq = 305.8, color = "Grey 1", name = "TEXACO" }
   },
   COM2 = {
     [1] = { freq = 140.0, color = "Red 1", name = "FLIGHT" },
