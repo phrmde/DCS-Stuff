@@ -13,7 +13,7 @@
     [10] = { freq = 334.4, color = "Orange 4", name = "NAVAL MISSION 4" },
     [11] = { freq = 351.1, color = "Yellow 1", name = "STRIKE PACKAGE 1" },
     [12] = { freq = 351.2, color = "Yellow 2", name = "STRIKE PACKAGE 2" },
-    [20] = { freq = 334.4, color = "Orange 4", name = "GUARD VHF" }
+    [20] = { freq = 121.5, color = "Orange 4", name = "GUARD VHF" }
   },
   COM2 = {
     [1] = { freq = 261.5, color = "Blue 1", name = "MAGIC" },
