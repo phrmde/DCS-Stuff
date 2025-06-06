@@ -34,7 +34,7 @@
     [16] = { freq = 261, color = "Amber 2", name = "SENAKI TWR" },
     [17] = { freq = 269.2, color = "Amber 3", name = "VAZIANI GND" },
     [18] = { freq = 269, color = "Amber 4", name = "VAZIANI TWR" },
-    [19] = { freq = 262.5, color = "Amber 5", name = "BATUMI GND" },
-    [20] = { freq = 262, color = "Amber 6", name = "BATUMI TWR" }
+    [19] = { freq = 261.1, color = "Amber 5", name = "KOBULETI GND" },
+    [20] = { freq = 261, color = "Amber 6", name = "KOBULETI TWR" }
   }
 }
