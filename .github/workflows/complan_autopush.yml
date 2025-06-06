@@ -51,7 +51,7 @@ jobs:
         with:
           token: ${{ secrets.GH_PAT }}
           commit-message: Auto-generated COM PLAN kneeboards
-          branch: autogen/complan-kneeboards-pr
+          branch: autogen/complan-kneeboards  # <–– Verwende die gleiche wie gepusht
           title: "Auto-generated COM PLAN kneeboards"
           body: |
             Dieser Pull Request enthält automatisch generierte Kneeboard-Dateien (.png)
