@@ -10,7 +10,7 @@
     [7] = { freq = 334.1, color = "Orange 1", name = "NAVAL MISSION 1" },
     [8] = { freq = 334.2, color = "Orange 2", name = "NAVAL MISSION 2" },
     [9] = { freq = 334.3, color = "Orange 3", name = "NAVAL MISSION 3" },
-    [10] = { freq = 334.4, color = "Orange 4", name = "NAVAL MISSION 4" },
+    [10] = { freq = 334.4, color = "Orange 4", name = "NAVAL MISSION 4" }
   },
   COM2 = {
     [1] = { freq = 261.5, color = "Blue 1", name = "MAGIC" },
