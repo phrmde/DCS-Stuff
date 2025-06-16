@@ -120,7 +120,6 @@ local staticObj = {
 										["x"] = 24180.838664967,
 										["name"] = "staticCVeq Junkyard AS32-32A-1",
 										["heading"] = 0.1221730476396,
-									}, -- end of [1]
 -- Copy and paste over this with the units information end
 
 -- these can be left as is, but is required.
