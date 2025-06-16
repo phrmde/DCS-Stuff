@@ -26,7 +26,7 @@ local staticObj = {
 	["y"] = 0,			-- The initial location of the unit (required else unit will offset on origin of map)
 	["x"] = 0,			
 	["heading"] = 0,
-	["linkUnit"] = 1, -- This value must be set Via 'shipID = #' where # is the id of the ship you wish to spawn on
+	["linkUnit"] = DeckShipID, -- This value must be set Via 'shipID = #' where # is the id of the ship you wish to spawn on
 	["linkOffset"] = true,
 	["dead"] = false,
 }
@@ -61,7 +61,7 @@ local staticObj = {
 	["y"] = 0,			-- The initial location of the unit (required else unit will offset on origin of map)
 	["x"] = 0,			
 	["heading"] = 0,
-	["linkUnit"] = 1, -- This value must be set Via 'shipID = #' where # is the id of the ship you wish to spawn on
+	["linkUnit"] = DeckShipID, -- This value must be set Via 'shipID = #' where # is the id of the ship you wish to spawn on
 	["linkOffset"] = true,
 	["dead"] = false,
 }

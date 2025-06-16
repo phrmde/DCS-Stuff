@@ -1,23 +1,23 @@
 
 local staticObj = {
-	["name"] = "staticCVac Street F14-1", -- unit name (Name this something identifiable if you wish to remove it later)
+	["name"] = "staticCVac Island SH-60-1", -- unit name (Name this something identifiable if you wish to remove it later)
 
 -- Copy and paste over this with the units information
-                                        ["livery_id"] = "vf-31 1991 ae200",
-										["category"] = "Planes",
+                                        ["livery_id"] = "standard",
+										["category"] = "Helicopters",
 										["offsets"] = 
 										{
-											["y"] = 10.48567546007,
-											["angle"] = 4.2958053072252,
-											["x"] = -39.053521284037,
+											["y"] = 19.846917915337,
+											["angle"] = 1.5556383815942,
+											["x"] = -54.693689548802,
 										}, -- end of ["offsets"]
-										["type"] = "F-14A-135-GR",
-										["unitId"] = 10,
-										["rate"] = "50",
-										["y"] = -847075.08366258,
-										["x"] = 24152.092592776,
-										["name"] = "staticCVac Street F14-1",
-										["heading"] = 2.4783675378319,
+										["type"] = "SH-60B",
+										["unitId"] = 64,
+										["rate"] = "30",
+										["y"] = -847062.2023316,
+										["x"] = 24164.989066553,
+										["name"] = "staticCVac Island SH-60-1",
+										["heading"] = 6.0213859193804,
 -- Copy and paste over this with the units information end
 
 -- these can be left as is, but is required.
@@ -33,25 +33,27 @@ local staticObj = {
 coalition.addStaticObject(country.id.USA, staticObj) -- makes the object
 
 -- ********************************************************
+
+
 local staticObj = {
-	["name"] = "staticCVac Street F14-2", -- unit name (Name this something identifiable if you wish to remove it later)
+	["name"] = "staticCVac Island SH-60-2", -- unit name (Name this something identifiable if you wish to remove it later)
 
 -- Copy and paste over this with the units information
-                                        ["livery_id"] = "vf-31 1991 ae205",
-										["category"] = "Planes",
+                                        ["livery_id"] = "standard",
+										["category"] = "Helicopters",
 										["offsets"] = 
 										{
-											["y"] = 5.2762906552636,
-											["angle"] = 4.2958053072252,
-											["x"] = -26.879545508848,
+											["y"] = 20.416149236762,
+											["angle"] = 1.2763857012751,
+											["x"] = -60.303445270482,
 										}, -- end of ["offsets"]
-										["type"] = "F-14A-135-GR",
-										["unitId"] = 11,
-										["rate"] = "50",
-										["y"] = -847085.61736491,
-										["x"] = 24144.068598045,
-										["name"] = "staticCVac Street F14-2",
-										["heading"] = 2.4783675378319,
+										["type"] = "SH-60B",
+										["unitId"] = 65,
+										["rate"] = "30",
+										["y"] = -847056.90131593,
+										["x"] = 24166.910684733,
+										["name"] = "staticCVac Island SH-60-2",
+										["heading"] = 5.7421332390613,
 -- Copy and paste over this with the units information end
 
 -- these can be left as is, but is required.
@@ -60,7 +62,7 @@ local staticObj = {
 	["y"] = 0,			-- The initial location of the unit (required else unit will offset on origin of map)
 	["x"] = 0,			
 	["heading"] = 0,
-	["linkUnit"] = 1, -- This value must be set Via 'shipID = #' where # is the id of the ship you wish to spawn on
+	["linkUnit"] = DeckShipID, -- This value must be set Via 'shipID = #' where # is the id of the ship you wish to spawn on
 	["linkOffset"] = true,
 	["dead"] = false,
 }
