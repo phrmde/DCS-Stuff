@@ -1,0 +1,304 @@
+The following Commands can be utilized/triggered in the ME via X: SET COMMAND or X: SET COMMAND WITH VALUE
+
+
+SET COMMAND WITH VALUE 10009 <value>
+
+value = 1 disables Jester LANTIRN auto designate 
+
+value = 0 enables Jester LANTIRN auto designate (default)
+
+ 
+
+SET COMMAND WITH VALUE 10010 <value>
+
+value = 1 silences Jester 
+
+value = 0 Jester will talk again (default)
+
+ 
+
+SET COMMAND WITH VALUE 100011 <value>
+
+value = 1 disables Jester 
+
+value = 0 reactivates Jester (default)
+
+ 
+
+SET COMMAND WITH VALUE 10012 <value>
+
+This is a special command with which you can force Jester to track a specific target using unit name. Since SET COMMAND can only accept numerical values >= -1 and <= 1, we use the following rule: 
+
+value = 0.01 will track unit named LantirnTarget01 
+
+value = 0.02 will track unit named LantirnTarget02 ... value = 0.99 will track unit named LantirnTarget99 value = 1.00 will track unit named LantirnTarget100 
+
+value = 0 will resume Jester state to normal operations
+
+ 
+
+SET COMMAND WITH VALUE 10013 <value>
+
+Another special command but this time Jester will track zones. 
+
+value = 0.01 will track zone named LantirnZone01 
+
+value = 0.02 will track zone named LantirnZone02 ... 
+
+value = 0.99 will track zone named LantirnZone99 value = 1.00 will track zone named LantirnZone100 
+
+value = 0 will resume Jester state to normal operations 
+
+Commands 10012 and 10013 are exclusive - when Jester is tracking a unit using command 10012, activating command 10013 will force jester to stop tracking that unit and start tracking a zone, and vice versa. 
+
+Using value = 0 in either of the two will stop tracking both units and zones. 
+
+ 
+
+10014: Jester will designate manually what is under the lantirn cross. 
+
+ 
+
+10015: - tune AN/ARC-182 to a selected channel. 
+
+As the value pass: 0.XX where XX is the two-digit channel number 
+
+ 
+
+10016 - tune TACAN channel. 
+
+The value should be constructed using the following guide: 
+
+s0.XXXY, where s is an optional - sign - use negative values for A/A and positive for T/R 
+
+XXX is the three-digit channel number (remember about the leading zeroes for channels lower than 100) 
+
+Y is 0 for using X-mode, and 1 for using Y-mode. 
+
+so: 0.0630 is channel 63X, T/R -0.0081 is channel 8Y, A/A
+
+ 
+
+10017: DEST knob
+
+    0.1 - WP1
+
+    0.2 - WP2
+
+    0.3 - WP3
+
+    0.4 - FP
+
+    0.5 - IP
+
+    0.6 - ST
+
+    0.7 - HB
+
+    0.8 - MAN
+
+ 
+
+10018: select waypoint to enter coords from a trigger zone (this command does no action in the cockpit)
+
+    0.1 - WP1
+
+    0.2 - WP2
+
+    0.3 - WP3
+
+    0.4 - FP
+
+    0.5 - IP
+
+    0.6 - ST
+
+    0.7 - HB
+
+    0.8 - MAN
+
+  
+
+  
+
+10019: enter coords from trigger zone for the waypoint selected with 10018 (if no selected, WP1)
+
+    0.01 - WaypointZone01
+
+    0.02 - WaypointZone02
+
+    ...
+
+    0.99 - WaypointZone99
+
+ 
+
+   
+
+10020: WCS switch
+
+    0.1 - OFF
+
+    0.2 - STBY
+
+    0.3 - ON
+
+    0.0 - return to automatic
+
+    
+
+ 
+
+10021: run RWR BIT
+
+ 
+
+
+10022: TID range knob
+
+    0.1 - 25 NM
+
+    0.2 - 50 NM
+
+    0.3 - 100 NM
+
+    0.4 - 200 NM
+
+    0.5 - 400 NM
+
+    0.0 - return to automatic
+
+    
+
+10023: Jester Eject
+
+ 
+
+
+10024: STT target:
+
+0.00 - Stop force STT track
+
+0.01 - AirTarget01
+
+0.02 - AirTarget02
+
+...
+
+0.99 - AirTarget99
+
+ 
+
+10025: break lock
+
+ 
+
+10026: weapon station state
+
+0.xy
+
+x - station number (1-8)
+
+y - state: 0 down (safe), 1 up (selected)
+
+ 
+
+10027: weapon wheel option:
+
+0.10 - MK-81H
+
+0.11 - MK-81L
+
+0.12 - MK-82H
+
+0.13 - MK-82L
+
+0.14 - MK-83H
+
+0.15 - MK-83L
+
+0.16 - MK-84
+
+0.17 - LAU-10
+
+0.19 - CBU-59A
+
+0.20 - CBU-59B
+
+0.21 - CBU-59C
+
+0.22 - MK-20A
+
+0.23 - MK-20B
+
+0.24 - MK-20C
+
+0.25 - MK-45
+
+0.26 - GBU-10
+
+0.27 - GBU-12
+
+0.28 - GBU-16
+
+0.29 - GBU-24
+
+0.30 - BDU-33
+
+0.31 - TALD
+
+0.32 - SUU-25
+
+ 
+
+10028: ATTK MODE knob:
+
+0.0 - CMPTR TGT
+
+0.1 - CMPTR IP
+
+0.2 - CMPTR PLT
+
+0.3 - MAN
+
+ 
+
+10029: DLVY MODE switches
+
+0.xy
+
+x: 0 - STP, 1 - RPL
+
+y: 0 - SGL, 1 - PRS
+
+ 
+
+10030: DLVY INTERVAL
+
+0.xy
+
+x: first roller
+
+y: second roller
+
+ 
+
+10031: DLVY QTY
+
+0.xy
+
+x - first roller
+
+y - second roller
+
+ 
+
+10032: MSL Launch
+
+ 
+
+10033: Radar azimuth -1 to 1
+
+ 
+
+10034: Radar elevation -1 to 1
