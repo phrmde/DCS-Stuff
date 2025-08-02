@@ -5,7 +5,7 @@
     [2] = { freq = 324.25, color = "Red 2", name = "Chevy-1" },
     [3] = { freq = 324.5, color = "Red 3", name = "Chevy-2" },
     [4] = { freq = 324.75, color = "Red 4", name = "Chevy-3" },
-    [5] = { freq = 243, color = "Black 1", name = "GUARD UHF " },
+    [5] = { freq = 243, color = "Black 1", name = "GUARD UHF" },
     [6] = { freq = 261.1, color = "Green 1", name = "SENAKI ATIS" },
     [7] = { freq = 262.2, color = "Green 2", name = "SENAKI GND" },
     [8] = { freq = 261, color = "Green 3", name = "SENAKI TWR" },
