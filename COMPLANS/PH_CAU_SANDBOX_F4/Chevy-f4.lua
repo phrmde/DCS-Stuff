@@ -38,7 +38,7 @@
     [15] = { freq = 269.75, color = "Amber 5", name = "VAZIANI ATIS" },
     [16] = { freq = 262.75, color = "Amber 1", name = "KOBULETI ATIS" },
     [17] = { freq = 262.5, color = "Amber 2", name = "KOBULETI GND" },
-    [18] = { freq = 262, color = "Amber 3", name = "KOBULETI TWR" }
+    [18] = { freq = 262, color = "Amber 3", name = "KOBULETI TWR" },
     [19] = { freq = 269.5, color = "Amber 5", name = "VAZIANI GND" },
     [20] = { freq = 269, color = "Amber 6", name = "VAZIANI TWR" }
   }
