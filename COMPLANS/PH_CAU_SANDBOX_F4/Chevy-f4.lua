@@ -1,0 +1,45 @@
+{
+  aircraft = "F-4E", 
+  COM1 = {
+    [1] = { freq = 324, color = "Red 1", name = "Chevy Common" },
+    [2] = { freq = 324.25, color = "Red 2", name = "Chevy-1" },
+    [3] = { freq = 324.5, color = "Red 3", name = "Chevy-2" },
+    [4] = { freq = 324.75, color = "Red 4", name = "Chevy-3" },
+    [5] = { freq = 243, color = "Black 1", name = "GUARD UHF " },
+    [6] = { freq = 261.1, color = "Green 1", name = "SENAKI ATIS" },
+    [7] = { freq = 262.2, color = "Green 2", name = "SENAKI GND" },
+    [8] = { freq = 261, color = "Green 3", name = "SENAKI TWR" },
+    [9] = { freq = 261.3, color = "Green 4", name = "SENAKI DEP" },
+    [10] = { freq = 261.4, color = "Green 5", name = "SENAKI APR" },
+    [11] = { freq = 261.5, color = "Amber 6", name = "SENAKI ARR" },
+    [12] = { freq = 305.5, color = "Blue 1", name = "MAGIC" },
+    [13] = { freq = 307.75, color = "Blue 2", name = "OVERLORD" },
+    [14] = { freq = 262.9, color = "Grey 1", name = "TEXACO-2-3 - 23Y" },
+    [15] = { freq = 262.1, color = "Grey 2", name = "TEXACO-3-2 - 32Y" },
+    [16] = { freq = 262.75, color = "Amber 1", name = "KOBULETI ATIS" },
+    [17] = { freq = 262.5, color = "Amber 2", name = "KOBULETI GND" },
+    [18] = { freq = 262, color = "Amber 3", name = "KOBULETI TWR" }
+  },
+  COM2 = {
+    [1] = { freq = 324, color = "Red 1", name = "Chevy Common" },
+    [2] = { freq = 324.25, color = "Red 2", name = "Chevy-1" },
+    [3] = { freq = 324.5, color = "Red 3", name = "Chevy-2" },
+    [4] = { freq = 324.75, color = "Red 4", name = "Chevy-3" },
+    [5] = { freq = 243, color = "Black 1", name = "GUARD UHF " },
+    [6] = { freq = 261.1, color = "Green 1", name = "SENAKI ATIS" },
+    [7] = { freq = 262.2, color = "Green 2", name = "SENAKI GND" },
+    [8] = { freq = 261, color = "Green 3", name = "SENAKI TWR" },
+    [9] = { freq = 261.3, color = "Green 4", name = "SENAKI DEP" },
+    [10] = { freq = 261.4, color = "Green 5", name = "SENAKI APR" },
+    [11] = { freq = 261.5, color = "Amber 6", name = "SENAKI ARR" },
+    [12] = { freq = 305.5, color = "Blue 1", name = "MAGIC" },
+    [13] = { freq = 307.75, color = "Blue 2", name = "OVERLORD" },
+    [14] = { freq = 337.7, color = "Blue 3", name = "GCI EYEBALL-1" },
+    [15] = { freq = 269.75, color = "Amber 5", name = "VAZIANI ATIS" },
+    [16] = { freq = 262.75, color = "Amber 1", name = "KOBULETI ATIS" },
+    [17] = { freq = 262.5, color = "Amber 2", name = "KOBULETI GND" },
+    [18] = { freq = 262, color = "Amber 3", name = "KOBULETI TWR" }
+    [19] = { freq = 269.5, color = "Amber 5", name = "VAZIANI GND" },
+    [20] = { freq = 269, color = "Amber 6", name = "VAZIANI TWR" }
+  }
+}
