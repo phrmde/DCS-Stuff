@@ -1,10 +1,10 @@
 {
   aircraft = "F/A-18C", 
   COM1 = {
-    [1] = { freq = 256, color = "", name = "F/A-18 Intraflight 1" },
-    [2] = { freq = 256.1, color = "", name = "F/A-18  Intraflight 2" },
-    [3] = { freq = 256.2, color = "", name = "F/A-18  Intraflight 3" },
-    [4] = { freq = 256.3, color = "", name = "F/A-18  Intraflight 4" },
+    [1] = { freq = 256, color = "none", name = "F/A-18 Intraflight 1" },
+    [2] = { freq = 256.1, color = "none", name = "F/A-18  Intraflight 2" },
+    [3] = { freq = 256.2, color = "none", name = "F/A-18  Intraflight 3" },
+    [4] = { freq = 256.3, color = "none", name = "F/A-18  Intraflight 4" },
     [5] = { freq = 121.5, color = "Black", name = "Guard" },
     [6] = { freq = 275.1, color = "Yellow 1", name = "Air-to-Air" },
     [7] = { freq = 275.2, color = "Yellow 2", name = "Air-to-Air" },
