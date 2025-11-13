@@ -10,15 +10,18 @@ from PIL import Image, ImageDraw, ImageFont
 color_map = {
     "Red": "#FF4C4C", "Blue": "#4C6BFF", "Green": "#4CFF4C", "Grey": "#A9A9A9",
     "Amber": "#FFC04C", "White": "#FFFFFF", "Black": "#000000", "Yellow": "#FFFF4C",
-    "Brown": "#A0522D", "Purple": "#A020F0", "Orange": "#Ffa500"
+    "Brown": "#A0522D", "Purple": "#A020F0", "Orange": "#Ffa500", "none": "#EEE8CD"
 }
 
 radio_names = {
     "F-4E": {"COM1": "COMM UHF AN/ARC-164", "COM2": "AUX UHF AN/ARC-164"},
     "A-4E": {"COM1": "COMM UHF AN/ARC-51", "COM2": "n/a"},
+    "F-14": {"COM1": "COM1 UHF AN/ARC-159", "COM2": "COM2 UHF/VHF AN/ARC-182"},
+    "F-14A": {"COM1": "COM1 UHF AN/ARC-159", "COM2": "COM2 UHF/VHF AN/ARC-182"},
     "F-14B": {"COM1": "COM1 UHF AN/ARC-159", "COM2": "COM2 UHF/VHF AN/ARC-182"},
     "F-16CM": {"COM1": "COM1 UHF AN/ARC-164", "COM2": "COM2 VHF AN/ARC-222"},
-    "F/A-18C": {"COM1": "COM1 UHF/VHF AN/ARC-210", "COM2": "COM2 UHF/VHF AN/ARC-210"}
+    "F/A-18C": {"COM1": "COM1 UHF/VHF AN/ARC-210", "COM2": "COM2 UHF/VHF AN/ARC-210"},
+    "General": {"COM1": "UHF", "COM2": "VHF"}
 }
 
 def render_com_plan(aircraft, com1_data, com2_data, output_dir, input_file):
@@ -56,7 +59,7 @@ def render_com_plan(aircraft, com1_data, com2_data, output_dir, input_file):
             draw_obj.text((x + 60, y + 5), f"{freq}", font=cell_font, fill="black")
             draw_obj.rectangle([x + 180, y + 5, x + 320, y + row_height - 5], fill=fill_color)
             draw_obj.text((x + 185, y + 5), f"{color}", font=cell_font,
-                          fill="black" if color != "Black" else "white")
+                          fill="white" if "Black" in color else "Black")
             draw_obj.text((x + 400, y + 5), f"{name}", font=cell_font, fill="black")
             y += row_height
 
