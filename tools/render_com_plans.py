@@ -10,8 +10,7 @@ from PIL import Image, ImageDraw, ImageFont
 color_map = {
     "Red": "#FF4C4C", "Blue": "#4C6BFF", "Green": "#4CFF4C", "Grey": "#A9A9A9",
     "Amber": "#FFC04C", "White": "#FFFFFF", "Black": "#000000", "Yellow": "#FFFF4C",
-    "Brown": "#A0522D", "Purple": "#A020F0", "Orange": "#Ffa500",
-    "n/a": "#EEE8CD"
+    "Brown": "#A0522D", "Purple": "#A020F0", "Orange": "#Ffa500", "none": "#EEE8CD"
 }
 
 radio_names = {
@@ -60,7 +59,7 @@ def render_com_plan(aircraft, com1_data, com2_data, output_dir, input_file):
             draw_obj.text((x + 60, y + 5), f"{freq}", font=cell_font, fill="black")
             draw_obj.rectangle([x + 180, y + 5, x + 320, y + row_height - 5], fill=fill_color)
             draw_obj.text((x + 185, y + 5), f"{color}", font=cell_font,
-                          fill="black" if color != "Black" else "white")
+                          fill="white" if "Black" in color else "Black")
             draw_obj.text((x + 400, y + 5), f"{name}", font=cell_font, fill="black")
             y += row_height
 
