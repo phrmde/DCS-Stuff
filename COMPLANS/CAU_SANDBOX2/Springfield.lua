@@ -9,7 +9,7 @@
     [6] = { freq = 275.1, color = "Yellow 1", name = "Air-to-Air" },
     [7] = { freq = 275.2, color = "Yellow 2", name = "Air-to-Air" },
     [8] = { freq = 276.1, color = "Red 1", name = "Strike" },
-    [8] = { freq = 276.2, color = "Red 2", name = "Strike" }
+    [9] = { freq = 276.2, color = "Red 2", name = "Strike" }
   },
   COM2 = {
     [1] = { freq = 227.5, color = "Green 1", name = "CVN TWR" },
@@ -19,8 +19,8 @@
     [5] = { freq = 243, color = "Black", name = "Guard" },
     [6] = { freq = 251.5, color = "Grey 1", name = "MAULER (S-3B)" },
     [7] = { freq = 262.2, color = "Grey 2", name = "SHELL (KC135 MPRS)" },
-    [8] = { freq = 133, color = "Grey 3", name = "JTAC" },
-    [9] = { freq = 134.5, color = "Green 1", name = "RANGE" },
+    [8] = { freq = 133, color = "Orange 1", name = "JTAC" },
+    [9] = { freq = 134.5, color = "Orange 2", name = "RANGE" },
     [10] = { freq = 227.8, color = "Green 3", name = "CVN MARSHAL" },
     [11] = { freq = 227.5, color = "Green 1", name = "CVN TWR" },
     [12] = { freq = 227.7, color = "Green 4", name = "CVN LOS" },
