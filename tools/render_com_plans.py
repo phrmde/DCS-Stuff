@@ -16,6 +16,8 @@ color_map = {
 radio_names = {
     "F-4E": {"COM1": "COMM UHF AN/ARC-164", "COM2": "AUX UHF AN/ARC-164"},
     "A-4E": {"COM1": "COMM UHF AN/ARC-51", "COM2": "n/a"},
+    "F-14": {"COM1": "COM1 UHF AN/ARC-159", "COM2": "COM2 UHF/VHF AN/ARC-182"},
+    "F-14A": {"COM1": "COM1 UHF AN/ARC-159", "COM2": "COM2 UHF/VHF AN/ARC-182"},
     "F-14B": {"COM1": "COM1 UHF AN/ARC-159", "COM2": "COM2 UHF/VHF AN/ARC-182"},
     "F-16CM": {"COM1": "COM1 UHF AN/ARC-164", "COM2": "COM2 VHF AN/ARC-222"},
     "F/A-18C": {"COM1": "COM1 UHF/VHF AN/ARC-210", "COM2": "COM2 UHF/VHF AN/ARC-210"}
