@@ -11,7 +11,7 @@ color_map = {
     "Red": "#FF4C4C", "Blue": "#4C6BFF", "Green": "#4CFF4C", "Grey": "#A9A9A9",
     "Amber": "#FFC04C", "White": "#FFFFFF", "Black": "#000000", "Yellow": "#FFFF4C",
     "Brown": "#A0522D", "Purple": "#A020F0", "Orange": "#Ffa500",
-    "none": "#EEE8CD"
+    "n/a": "#EEE8CD"
 }
 
 radio_names = {
