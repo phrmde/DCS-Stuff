@@ -21,7 +21,8 @@ radio_names = {
     "F-14A": {"COM1": "COM1 UHF AN/ARC-159", "COM2": "COM2 UHF/VHF AN/ARC-182"},
     "F-14B": {"COM1": "COM1 UHF AN/ARC-159", "COM2": "COM2 UHF/VHF AN/ARC-182"},
     "F-16CM": {"COM1": "COM1 UHF AN/ARC-164", "COM2": "COM2 VHF AN/ARC-222"},
-    "F/A-18C": {"COM1": "COM1 UHF/VHF AN/ARC-210", "COM2": "COM2 UHF/VHF AN/ARC-210"}
+    "F/A-18C": {"COM1": "COM1 UHF/VHF AN/ARC-210", "COM2": "COM2 UHF/VHF AN/ARC-210"},
+    "General": {"COM1": "UHF", "COM2": "VHF"}
 }
 
 def render_com_plan(aircraft, com1_data, com2_data, output_dir, input_file):
