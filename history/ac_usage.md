@@ -2,13 +2,15 @@
 
 | Flugzeug           | Indienststellung | Hochzeit der Nutzung | Ausmusterung       | Verwendungsart                          |
 |--------------------|------------------|-----------------------|--------------------|-----------------------------------------|
-| F-14A-135GR        | 1978             | 1980–1990             | 2004 (USN)         | Flotten-Luftüberlegenheit, Abfang       |
+| F-14A-95-GR        | ca. 1983–1985    | 1985–1995            | 2004 (USN)         | Flotten-Luftüberlegenheit, Abfang, frühe Mehrzweckfähigkeit     |
+| F-14A-135-GR        | 1978             | 1980–1990             | 2004 (USN)         | Flotten-Luftüberlegenheit, Abfang       |
 | F-14B              | 1987             | 1990–2004             | 2004 (USN)         | Mehrzweck, Luftüberlegenheit             |
 | F-14B(U)           | ca. 1995         | 1996–2004             | 2006 (letzte VF-103)| Upgraded Mehrzweck-Version              |
 | F/A-18A            | 1983             | 1985–1995             | 2015 (USMC)        | Jagdbomber, Trägerflugzeug              |
 | F/A-18C            | 1987             | 1990–2010             | 2022 (USMC)        | Multirole, Trägerflugzeug               |
 | F/A-18C Lot 20     | 1990             | 1990–2010             | 2022 (USMC)        | Modernste C-Version mit Upgrades        |
 | A-4E-C             | 1962             | 1965–1975             | 1980er (US)        | Leichter Jagdbomber, Trägerbetrieb      |
+| A-6E               | 1971             | 1975–1995             | 1997 (USN)         | Allwetter-Bomber, Deep Strike, Trägerbetrieb      |
 | F-4E-45MC          | 1972             | 1975–1990             | 1996 (USAF)        | Jagdbomber, CAS, Abfang                 |
 | F-16A              | 1978             | 1980–1995             | >2010 (Export)     | Leichtes Mehrzweckkampfflugzeug         |
 | F-16AM             | 1997 (MLU)       | 2000–heute            | –                  | Modernisierter F-16A (NATO)             |
