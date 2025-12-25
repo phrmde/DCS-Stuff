@@ -2,8 +2,9 @@
 
 | Flugzeug           | Indienststellung | Hochzeit der Nutzung | Ausmusterung       | Verwendungsart                          |
 |--------------------|------------------|-----------------------|--------------------|-----------------------------------------|
-| F-14A-95-GR        | ca. 1983–1985    | 1985–1995            | 2004 (USN)         | Flotten-Luftüberlegenheit, Abfang, frühe Mehrzweckfähigkeit     |
-| F-14A-135-GR        | 1978             | 1980–1990             | 2004 (USN)         | Flotten-Luftüberlegenheit, Abfang       |
+| F-14A-95-GR        | ca. 1976–1978    | 1970er – frühe 1980er | USN: 1990er, Iran noch heute | Frühe Einsatzversion, Luftüberlegenheit, Flottenluftverteidigung; IRIAF: weiterhin aktiv     |
+| F-14A-135-GR (early) | 1978             | 1980–1990             | 2006 (USN)         | Standard‑USN‑Version der frühen 1980er; Fleet Defense, CAP, Escor       |
+| F-14A-135-GR (late)  | Mitte 19980er    | späte 1980er – 1990er   | 2006 (USN)         | Modernisierte F‑14A mit verbessertem RWR; Multi‑Role (A2A + A2G), LANTIRN‑fähig       |
 | F-14B              | 1987             | 1990–2004             | 2004 (USN)         | Mehrzweck, Luftüberlegenheit             |
 | F-14B(U)           | ca. 1995         | 1996–2004             | 2006 (letzte VF-103)| Upgraded Mehrzweck-Version              |
 | F/A-18A            | 1983             | 1985–1995             | 2015 (USMC)        | Jagdbomber, Trägerflugzeug              |
